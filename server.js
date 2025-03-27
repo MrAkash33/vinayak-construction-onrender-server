@@ -14,7 +14,7 @@ app.get("/api/getData", (req, res) => {
 });
 
 // ✅ Cron Job - Calls API Every Minute
-cron.schedule("*/1 * * * *", async () => {
+cron.schedule("* * */6 * * ", async () => {
   console.log("⏰ Running Cron Job: Fetching Projects...");
 
   try {
