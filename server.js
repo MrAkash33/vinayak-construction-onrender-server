@@ -18,9 +18,9 @@ cron.schedule("* * */6 * * ", async () => {
   console.log("⏰ Running Cron Job: Fetching Projects...");
 
   try {
-    const response = await fetch("https://vinayakconstructions.netlify.app/api/getProjects");
-    const data = await response.json();
-    console.log("✅ API Response:", data);
+    // const response = await fetch("https://vinayakconstructions.netlify.app/api/getProjects");
+    // const data = await response.json();
+    // console.log("✅ API Response:", data);
   } catch (error) {
     console.error("❌ Error calling API:", error);
   }
